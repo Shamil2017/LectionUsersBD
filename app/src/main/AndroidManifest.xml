@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LectionUsersBD">
         <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".RegistationActivity"
             android:exported="false" />
         <activity

@@ -30,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
         }
         if (view == btnIdentification)
         {
-            //Intent go = new Intent(this, LoginActivity.class  );
-            //startActivity(go);
+            Intent go = new Intent(this, LoginActivity.class  );
+            startActivity(go);
         }
     }
 }
