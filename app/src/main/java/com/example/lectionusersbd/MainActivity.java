@@ -25,8 +25,8 @@ public class MainActivity extends AppCompatActivity {
     public void onClick(View view) {
         if (view == btnRegistration)
         {
-            //Intent go = new Intent(this, RegistationActivity.class );
-            //startActivity(go);
+            Intent go = new Intent(this, RegistationActivity.class );
+            startActivity(go);
         }
         if (view == btnIdentification)
         {
