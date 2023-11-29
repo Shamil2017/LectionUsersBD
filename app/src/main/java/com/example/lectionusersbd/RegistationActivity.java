@@ -22,9 +22,18 @@ public class RegistationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registation);
+        btnReg = findViewById(R.id.btnReg);
+        edLogin = findViewById(R.id.edLogin);
+        edPassword = findViewById(R.id.edPassword);
+        edMail = findViewById(R.id.edMail);
+        edPhone = findViewById(R.id.edPhone);
+
+        myDb = new HelperDB(this);
+        sqDb = myDb.getWritableDatabase();
+        sqDb.close();
     }
 
-    public void onClick(View view) {
+    public void onClickReg(View view) {
         String strLogin = edLogin.getText().toString().trim();
         String strPassword = edPassword.getText().toString().trim();
         String strEmail = edMail.getText().toString().trim();

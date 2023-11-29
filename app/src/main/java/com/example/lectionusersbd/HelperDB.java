@@ -18,7 +18,9 @@ public class HelperDB extends SQLiteOpenHelper {
     public HelperDB(@Nullable Context context) {
         super(context, DB_NAME, null, DB_VERSION);
     }
-
+    public HelperDB(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
+        super(context, DB_NAME, factory, DB_VERSION);
+    }
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         sqLiteDatabase.execSQL("CREATE TABLE "+ tableName+" ("

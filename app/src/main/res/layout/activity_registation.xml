@@ -125,7 +125,7 @@
 
     <Button
         android:id="@+id/btnReg"
-        android:onClick="onClick"
+        android:onClick="onClickReg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Зарегистрироаться" />
